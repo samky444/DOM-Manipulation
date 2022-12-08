@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <h2>DOM Manipulation</h2>
+  <h3 id="heading3">This is heading Three</h3>
+
+<button id="demo" onclick="clickme()">Click Me</button>
+<hr>
+
+<h2>Textbox Input</h2>
+<input type="text" id="text1" placeholder="some text" />
+<br>
+<input type="password" id="text2" placeholder="password" />
+
+<button id="btnText" onclick="showText()">Click Me</button>
+<hr>
+<h3>Drop Down Select Box</h3>
+<select name="choice" id="s1">
+
+  <option value="v1">CIS 121 Intro to CIS</option>
+  <option value="v2">CIS 122 Intro to Programming</option>
+  <option value="v3">CIS 123 Intro to OOP</option>
+  <option value="v4">CIS 124 Intro to JavaScript</option>
+</select>
+
+<button onclick="select()">Click Me</button>
+<p id="demo"></p>
+<hr>
+
+<h2>HTML Code for Radio Buttons</h2>
+<p>Select Your Favorite Color</p>
+
+<label for="c1">Red</label>
+<input type="radio" name="color" value="Red" id="c1" checked >
+
+<label for="c2">Blue</label>
+<input type="radio" name="color" value="Blue" id="c2">
+
+<label for="c3">Green</label>
+<input type="radio" name="color" value="Green" id="c3">
+
+<input type="button" onclick="check()" value="check">
+<hr>
+
+<h2>HTML code for Checkboxes</h2>
+<label for="r1">Red</label>
+<input type="checkbox" name="color" value="Red" id="r1" checked >
+
+<label for="r2">Blue</label>
+<input type="checkbox" name="color" value="Blue" id="r2">
+
+<input type="button" onclick="Toggle()" value="Toggle" >
+<hr>
+
+<h2>Form Validation for characters</h2>
+<p>Please enter a password that is more than 7 characters</p>
+
+  <label for="password">password</label>
+  <input id="password" name="password" type="password">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+<hr>
+
+<h2>Form Validation for Browser</h2>
+        <form id="myForm" name="myForm" 
+              action="index2.html" method="get">
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required >
+                <span>*</span>
+            </div>
+            </form>
+            
+            <p id="demo2"></p>
+
+            <div>
+              <label>&nbsp;</label>
+              <input type="submit" id="Submit_fname" value="Submit">
+          </div>     
+
+            <hr>
+
+
+<script src="index.js"></script>
+</body>
+
+
+</html>
