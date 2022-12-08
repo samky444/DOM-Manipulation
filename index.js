@@ -73,10 +73,11 @@ function select(){
 
        
           let message = "";
+          // A strong password should have at least 13 characters,including numbers, characters, and symbols
 
-          if(password.value.length <= 7){
+          if(password.value.length <= 12){
 
-            message = " Your input is not valid as it is less than 8 characters"
+            message = " Your input is not valid as it is less than 13 characters"
           alert(`${message}: ${password.value.length} characters only? please add more!`);
               myp.textContent = message;
             } else{
